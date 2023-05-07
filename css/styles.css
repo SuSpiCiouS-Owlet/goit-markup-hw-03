@@ -320,12 +320,7 @@ body {
   padding: 100px 0;
   background-color: var(--dark-background-color);
 }
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-}
+
 .footer-logo-link {
   display: inline-block;
   margin-bottom: 16px;
