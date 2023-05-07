@@ -189,7 +189,7 @@ body {
   display: flex;
   align-items: center;
 }
-.link-logo {
+.header-logo-link {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -317,11 +317,16 @@ body {
 /*=================== FOOTER ======================*/
 
 .page-footer {
-  display: flex;
   padding: 100px 0;
   background-color: var(--dark-background-color);
 }
-.footer-logo-link.link {
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.footer-logo-link {
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -336,13 +341,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-background-color);
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
 }
 
 /*=================== /FOOTER ======================*/
