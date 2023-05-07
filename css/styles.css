@@ -52,6 +52,7 @@ body {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px;
 }
 .section {
   padding-top: 120px;
@@ -118,6 +119,8 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--primary-text-color);
+  display: block;
+  margin-bottom: 72px;
 }
 
 .subtitle {
@@ -254,7 +257,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 72px;
   padding: 0px;
   gap: 24px;
 }
@@ -266,10 +268,6 @@ body {
 
 /*==================== SERVISES ====================*/
 
-.servises-title {
-  display: block;
-  margin-bottom: 72px;
-}
 .servises-list {
   display: flex;
   gap: 24px;
@@ -293,10 +291,7 @@ body {
   align-items: center;
   padding: 32px 16px;
 }
-.team-title {
-  display: block;
-  margin-bottom: 72px;
-}
+
 .team-list-subtitle {
   text-align: center;
   margin-bottom: 8px;
@@ -326,6 +321,10 @@ body {
   padding: 100px 0;
   background-color: var(--dark-background-color);
 }
+.footer-logo-link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .logo-text-footer {
   color: var(--light-background-color);
 }
@@ -345,10 +344,7 @@ body {
   justify-content: center;
   align-items: start;
 }
-.footer-logo-link {
-  display: inline-block;
-  margin-bottom: 16px;
-}
+
 /*=================== /FOOTER ======================*/
 
 /*==================== PORTFOLIO ====================*/
