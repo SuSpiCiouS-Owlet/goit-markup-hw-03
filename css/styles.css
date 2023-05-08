@@ -71,8 +71,8 @@ body {
   color: var(--white-background);
   min-width: 169px;
   display: block;
-  flex-direction: row;
-  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 48px;
   padding: 16px 32px;
   gap: 10px;
@@ -95,13 +95,7 @@ body {
   letter-spacing: 0.04em;
   background-color: var(--light-background-color);
   color: var(--accent-color);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 12px 24px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border: transparent;
   border: var(--button-focus);
   border-radius: 4px;
 }
@@ -149,6 +143,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
+  margin-right: 76px;
 }
 
 .logo-text-top {
@@ -156,11 +151,13 @@ body {
 }
 
 .nav-list-link {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  padding: 24px 0;
 }
 
 .nav-list-link:hover,
@@ -175,9 +172,6 @@ body {
 }
 
 .page-header {
-  display: flex;
-  align-items: center;
-  padding: 24px 15px 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
 .page-header-container {
@@ -189,21 +183,13 @@ body {
   display: flex;
   align-items: center;
 }
-.header-logo-link {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-right: 76px;
-}
+
 .nav-list {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
-}
-.nav-list-link {
-  padding: 24px 0;
 }
 
 .contact-info {
@@ -235,23 +221,17 @@ body {
   color: var(--white-background);
 }
 
-.hero-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 .hero-title {
-  display: flex;
   max-width: 496px;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*==================== HERO ====================*/
 
 /*==================== ADVANTAGE ====================*/
 .advantage-title {
-  display: none;
+  visibility: hidden;
 }
 .advantage-list {
   display: flex;
@@ -276,6 +256,9 @@ body {
 .servises-list-item {
   flex-basis: calc((100% - 48px) / 3);
 }
+.servises {
+  padding-top: 0;
+}
 /*==================== /SERVISES ====================*/
 
 /*==================== TEAM ====================*/
@@ -284,11 +267,6 @@ body {
   background-color: var(--light-background-color);
 }
 .team-card-container {
-  width: 264;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 32px 16px;
 }
 
@@ -359,17 +337,15 @@ body {
   row-gap: 48px;
 }
 .examples-container {
-  width: 360px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: transparent;
 }
 .examples-list-item {
   width: calc((100% - 48px) / 3);
+}
+.examples-title {
+  visibility: hidden;
 }
 .examples-subtitle {
   margin-bottom: 8px;
